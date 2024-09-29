@@ -1,0 +1,768 @@
+---
+format: 
+  revealjs:
+      theme: [assets/ukhd.scss]
+      css: [assets/costum.css]
+      slide-number: c/t
+      show-slide-number: all
+      preview-links: true
+---
+
+## {}
+<!--this link to font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--height: 1920/1080, width: 1050/700-->
+![](images/logo.png){.absolute top="0" width="250" height="250"}  
+
+<br><br><br><br><br><br><br><br><br>
+<h3>Part 2: Measures in Epidemology</h3>
+
+<small>Ignacio Leiva-Escobar, MSc Epi / Health Data Science</small>
+
+## [Lecture Content]{style="text-align: center;"}
+
+<br><br>
+
+<div style="display: flex; gap: 10px;"> <!-- Container for the boxes with a gap between them -->
+					  
+<!--				Box 1: intro  -->			
+
+<div>
+<div class="info-box" style="
+								height: 30px;
+								border-radius: 12px 12px 0px 0px;
+								font-size: 25px;
+								font-weight: 800;
+								color:#fff;
+								background-color: #355070;">
+<p>Introduction</p>
+</div>
+				
+<div class="info-box" style="
+								height: 150px;
+								border-radius: 0px 0px 12px 12px;
+								font-size: 25px;
+								font-weight: 100;
+								">
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li>Definition</li>
+<li>Planning</li>
+<li>Causality</li>
+</ul>
+</div>
+</div>
+						
+<!--					 Box 2: Measures of frequency in Epi -->
+<div>
+<div class="info-box" style="
+								height: 30px;
+								border-radius: 12px 12px 0px 0px;
+								background-color: #6D597A;
+								border: 1px solid #6D597A;
+								color: #fff;
+								font-size: 23px;
+								font-weight: 800;">
+<p>Measures of frequency</p>
+</div>
+				
+<div class="info-box" style="
+								height: 150px;
+								border-radius: 0px 0px 12px 12px;
+								font-size: 24px;
+								font-weight: 100;
+								border: 1px solid #6D597A;">
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li>Prevalence</li>
+<li>Incidence measures</li>
+<ul style="list-style: square;">
+<il>Incidence</il>
+<il>Survival</il>
+</ul>
+<li>Interpretation</li>
+</ul>
+</div>
+</div>
+
+<!--	Box 3: Effect measurement -->
+<div>
+<div class="info-box" style="
+								height: 30px;
+								border-radius: 12px 12px 0px 0px;
+								background-color: #B56576;
+								border: 1px solid #B56576;
+								color: #fff;
+								font-size: 23px;
+								font-weight: 800;">
+<p>Effect &nbsp;measurement</p>
+</div>
+				
+<div class="info-box" style="
+								height: 150px;
+								border-radius: 0px 0px 12px 12px;
+								font-size: 24px;
+								border: 1px solid #B56576;
+								font-weight: 100;">
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li>Simple measures</li>
+<li>Measures of association</li>
+</ul>
+</div>
+</div>
+						 
+<!--				Box 4: Measures Effectiveness -->
+<div>
+<div class="info-box" style="
+								height: 30px;
+								border-radius: 12px 12px 0px 0px;
+								border: 1px solid #EAAC8B;
+								background-color: #EAAC8B;
+								color: #fff;
+								font-size: 23px;
+								font-weight: 800;">
+<p>Measures Effectiveness</p>
+</div>
+				
+<div class="info-box" style="
+								height: 150px;
+								border-radius: 0px 0px 12px 12px;
+								font-size: 25px;
+								border: 1px solid #EAAC8B;
+								font-weight: 100;">
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li>Attributable Fraction</li>
+<li>Attributable Risk</li>
+</ul>
+</div>
+</div>
+
+</div> 
+
+## Further classification of studies
+
+<p style="text-align: center; font-size: 30px; font-weight: 100;">Ascending order of studies to demostrate causality</p>
+
+<div class="container">
+<!-- Header Boxes -->
+<div class="header-container">
+<div class="box header-box box-left">
+Study type
+</div>
+  
+<div class="box header-box header-box-large box-right">
+Definition
+</div>
+</div>
+  
+<!-- Content Boxes -->
+<div class="content-container">
+<div class="box content-box box-left">
+Ecological
+</div>
+  
+<div class="box content-box box-right">
+Descriptive; associations at the group level can generate hypotheses but are prone to ecological fallacy
+</div>
+</div>
+  
+<div class="content-container">
+<div class="box content-box content-box-2 box-left">
+Cross-sectional
+</div>
+  
+<div class="box content-box content-box-2 box-right">
+Descriptive; associations at the individual level can generate hypotheses, but temporal relationships cannot be established
+</div>
+</div>
+  
+<div class="content-container">
+<div class="box content-box content-box-3 box-left">
+Case-control
+</div>
+  
+<div class="box content-box content-box-3 box-right">
+Increased prevalence of a risk factor among cases compared to controls may suggest a causal relationship, but only associations are established
+</div>
+</div>
+  
+<div class="content-container">
+<div class="box content-box content-box-4 box-left">
+Cohort
+</div>
+  
+<div class="box content-box content-box-4 box-right">
+Increased risk of disease among those exposed shows a temporal relationship, and potentially a causal relationship
+</div>
+</div>
+  
+<div class="content-container">
+<div class="box content-box content-box-5 box-left">
+Intervention
+</div>
+  
+<div class="box content-box content-box-5 box-right" style="border-radius: 0px 0px 40px 0px;">
+The modification (reduction) of the incidence rate of a disease through an intervention can confirm a causal relationship
+</div>
+</div>
+</div>
+
+## Basis of empirical studies
+
+<br><br><br>
+
+<div class="container2">
+
+<div class="col">
+<i class="fa fa-crosshairs" style="font-size:60px; color:#355070; opacity: 0.5;"></i>
+<p style="font-weight: 800;">Objective</p>
+Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">systemic bias</span>  in the planning and conduct of a epidemiological studies
+</div>
+		
+<div class="col">
+<i class="fa fa-database" style="font-size:60px; color:#355070; opacity: 0.5;"></i>
+<p style="font-weight: 800;">Data sources</p>
+Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">systemic bias</span>  in the planning and conduct of a epidemiological studies
+</div>
+
+<div class="col">
+<i class="fa fa-magnifying-glass-chart" style="font-size:60px; color:#355070; opacity: 0.5;"></i>
+<p style="font-weight: 800;">Principle of data analyses</p>
+Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">systemic bias</span>  in the planning and conduct of a epidemiological studies
+</div>
+
+</div>
+
+## Principle of data analyses
+
+<br>
+<br>
+<div class="grid-container">
+<div class="grid-item">
+<i class="fa-solid fa-broom"></i>
+<div>
+<h3>Data Cleaning</h3>
+<p>Identify measurement errors, coding errors, data standarisation, handle missing values, remove duplicates, visualizations</p>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fa-solid fa-chart-line"></i>
+<div>
+<h3>Descriptive analyses</h3>
+<p>Exploratory data analysis, summary statistics, idenfitgy outliers, identify patterns, relationships</p>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fa-solid fa-square-poll-vertical"></i>
+<div>
+<h3>Main data analyses</h3>
+<p>Parameters (point estimates, confidence intervals, p-values). Model Building (predictive or classification models)</p>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fa-solid fa-check-to-slot"></i>
+<div>
+<h3>Validation</h3>
+<p>Evaluate model performance using techniques like cross-validation, train-test split, and performance metrics (e.g., accuracy, precision).</p>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fa-solid fa-chalkboard-user"></i>
+<div>
+<h3>Interpretation</h3>
+<p>Analyse results, draw conclusions:, verify assumptions.</p>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fas fa-book"></i>
+<div>
+<h3>Reporting</h3>
+<p></p>
+</div>
+</div>
+</div>
+
+
+## {background-color="#6D597A"}
+
+<div style="position: absolute; bottom: 200px;">
+
+<h2>
+<p style ="text-align: left;">Measures of frequency in Epidemiology</p>
+</h2>
+
+
+<small> Tools to describe and compared populations, tack development over time, determine potential associations of exposures with health outcomes (aka: Measures of Morbidity)
+</small> 
+
+</div>
+
+## [Prevalence]{style="color: white"} 
+
+<h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh; color: #6D597A">Prevalence</h1>
+
+## [Prevalence cont.]{style="color: white"} 
+
+<br><br><br><br>
+
+<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 100px;">
+<div class="grid-item">
+<i class="fa-solid fa-people-group" style="color: #6D597A"></i>
+<div>
+<h3>Prevalence indicates</h3>
+<p>what proportion of the population is affected by the disease at specific time</p>
+</div>
+</div>
+		
+<div class="grid-item">
+<i class="fa-solid fa-pen-to-square" style="color: #6D597A"></i>
+<div style="font-size: 15px;">
+<h3 style="font-weight: 900;">Prevalence \( P \) is calculated as:</h3>
+
+<!--\begin{aligned} P= \frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}\end{aligned} -->
+
+$$\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}$$
+
+</div>			
+</div>
+</div>
+
+## Prevalence type
+
+<div style="position: absolute; top: 200px;">
+<ul style="font-size: 30px;">
+<li> 
+<strong>Point prevalence:</strong>  <em style="font-weight: 100;">“right know”, "snaptshot"</em>. Single point in time.
+<p>Describe the current situation or to compare to previous situations (track development over time)</p>
+</li>
+<br>
+<li>
+<strong>Period prevalence:</strong>  <em style="font-weight: 100;">“within 6 months”</em>. Single time period.
+</li>
+</ul>
+
+</div>
+		
+::: {.notes}
+		Period prevalence:
+		- Persons get sick during the period of ob.
+		- Persons were already ill before (die in the period)
+:::
+
+## [Quiz]{style="color: white"} 
+
+<h2 style="text-align: center; font-weight: 800">QUIZ</h2>
+
+<div class="container">
+<!-- Content Boxes -->
+<div class="content-container">
+<div class="box-white">
+Point prevalence
+</div>
+		  
+<div class="box-white">
+Do you currently have back pain?
+</div>
+</div>
+		  
+<div class="content-container">
+<div class="box-white">
+Period prevalence
+</div>
+		  
+<div class="box-white">
+Did you suffer from back pain last year? 
+</div>
+</div>
+</div>
+
+## Properties and limitations
+
+- Important measure of the 'Burden of Disease'
+- planning in the health system (in combination with demographic data projections possible)
+- In pharmacoepidemiology, e.g. as a measure of drug use
+- No recording of the time of onset of illness
+- Duration of illness does not go with (no information on duration)
+- No risk measure assessable, prevalence for atiological research (disease development, risk factors) unsuitable
+- Paradoxical situation: Since the prevalence reflects both the incidence rate and the probability of survival with a disease, prevalence studies provide information on factors influencing the probability of survival with a disease as well as on causes of the disease
+- Downsides of prevalence: mixes up information on (1) Frequency of new events and (2) disease duration
+- Does not capture dynamic populations (cure, death, migration...)
+
+## [Incidence]{style="color: white"} 
+
+<h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh;color: #6D597A">Incidence</h1>
+
+## [Incidence cont.]{style="color: white"} 
+
+<div class="grid-container2">
+<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item">
+<!--	<h2>Cumulative Incidence</h2>-->
+<h2 style="font-size: 35px; color: #ffff; font-weight: 800">Cumulative Incidence</h2>
+<div style="font-size: 50px; font-weight: 100; margin-top: 10px; color: #ffff; background: transparent; padding: 25px; border-radius: 20px;">
+$\begin{aligned}
+CI = \frac{\text{Number of New Cases}}{\text{Total Population at Risk}}
+\end{aligned}$
+</div>
+ 
+<div>
+<ul style="font-size: 21px;">
+<li>Proportion or risk</li>
+<li>No units</li>
+<li>Assumes all individuals are followed for the same period</li>
+<li>Probability of developing disease over a period</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item">
+<h2 style="font-size: 35px; color: #ffff; font-weight: 800">
+Incidence Rate</h2>
+
+
+<div style="font-size: 50px; margin-top: 10px; color: #ffff; background: transparent; padding: 25px; border-radius: 20px;">
+$\begin{aligned}
+IR = \frac{\text{Number of New Cases}}{\text{Total Person-Time at Risk}}
+\end{aligned}$
+</div>
+
+
+
+<div>
+<ul style="font-size: 21px;">
+<li>Rate</li>
+<li>Units of time (e.g., per person-year)</li>
+<li>Time that are a persons contributes (risk period)</li>
+<li>Accounts for varying follow-up times</li>
+<li>Speed at which new cases occur</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+## [Incidence cont. example]{style="color: white"} 
+
+<div class="grid-container2">
+<div style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item">
+<!--	<h2>Cumulative Incidence</h2>-->
+<h2 style="font-size: 35px; color: #ffff; font-weight: 800">Cumulative Incidence</h2>
+ 
+<p style="color: #fff;">Five-year cumulative incidence of recurrent colorectal cancer 21%. 21 out of every 100 developed a recurrence within five years</p>
+
+</div>
+</div>
+
+
+<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item">
+<h2 style="font-size: 35px; color: #ffff; font-weight: 800">
+Incidence Rate</h2>
+
+
+<div>
+<p style="color: #fff;">The value of the IR depends on the time unit being used </p> <!-- and this is why the numeric value should not be interpreted in isolation without knowing the time scale -->
+<p style="color: #fff;">e.g. 100 events per 1 person year</p> 
+<!--	<p>Women on postmenopausal hormones had an incidence rate of 30 events during 54,308.7 person years of follow-up</p> -->
+<ul style="font-size: 20px;">
+<li>IR = 100 / Personen-Jahr</li>
+<li> IR = 10 000 / 100 Personen-Jahre</li>
+<li>IR = 8,33 / Personen-Monat</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--Example
+<br>
+
+<div class="grid-container2 fragment">
+<div class="grid-item">
+Example: 
+<p>Five-year cumulative incidence of recurrent colorectal cancer 21%. 21 out of every 100 developed a recurrence within five years</p>
+</div>
+<div class="grid-item">
+Example: 
+<p>The value of the IR depends on the time unit being used </p> <!-- and this is why the numeric value should not be interpreted in isolation without knowing the time scale 
+<p>e.g. 100 events per 1 person year</p> 
+<!--	<p>Women on postmenopausal hormones had an incidence rate of 30 events during 54,308.7 person years of follow-up</p> -
+<ul style="font-size: 20px;">
+<li>IR = 100 / Personen-Jahr</li>
+<li> IR = 10 000 / 100 Personen-Jahre</li>
+<li>IR = 8,33 / Personen-Monat</li>
+</ul>
+</div>
+</div> 
+-->
+
+## Quiz ^[Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019.]
+
+
+<div class="grid-container2">
+<div class="grid-item">
+<figure>
+<figcaption style="font-size: 24px; font-weight: 800;">A</figcaption>
+<img src="images/img_incidence_01.jpg" alt="Description of image" width="340" height="230">
+</figure>
+</div>
+
+<div class="grid-item">
+<figure>
+<figcaption style="font-size: 24px; font-weight: 800;">B</figcaption>
+<img src="images/img_incidence_02.jpg" alt="Description of image" width="340" height="230">
+</figure>
+</div>
+</div>
+
+<div style= "margin-left: 130px;">
+<ul style="font-size: 25px;">
+<li class="fragment">The cumulative incidences for figures A and B are equal</li>
+<li class="fragment">The incidence rates for figures A and B are equal</li>
+<li class="fragment">The cumulative incidence and incidence rate for Figure A differ</li>
+<li class="fragment">The cumulative incidence and incidence rate for Figure B differ</li>
+</ul>
+</div>
+
+<!--
+<aside class="footnotes; fragment" style="font-size: 15px; text-align: right; color: #999; position: relative; bottom: 0px;">
+Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019.
+</aside>
+-->
+
+## Risk period, closed and open population
+<br>
+Incidence in dependence on the population:
+		
+<ul>
+<li>Fixed/closed population: common beginning/end (exit only by death) of the observation (incidence measure: cumulative incidence)</li>
+<li>Dynamic (open) population: entry (e.g. birth, immigration, ageing) and exit (e.g. death, emigration, ageing) possible at any time (incidence measure: incidence rate)</li>
+</ul>
+<p>Steady-state: the number of people entering and exiting the population is balanced (also with regard to age, gender and other risk factors</p>
+
+## {}
+
+Another measure that is very similar to the incidence rate and that is specifically used in survival analysis is the hazard rate.
+For all practical purposes, hazards can be thought of as incidence rates and thus the HR can be roughly interpreted as the incidence rate ratio (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3653612/).
+This means that the hazard rate can be thought of as the incidence rate of death or this other event (doi: 10.1093/ndt/gfw465)
+
+## Relationship between incidence and prevalence
+
+<div style="display: flex; justify-content: center; align-items: center;">
+<figure>
+<!-- <figcaption style="font-size: 24px; font-weight: 800;">B</figcaption> -->
+<img src="images/img_incid_prev_01.jpg" alt="Description of image" width="450" height="280">
+</figure>
+</div>
+
+<div class="fragment">
+$$Prevalence = \text{Incidence}\times\text{Duration of Disease}$$
+</div>
+
+## Age standardisation
+
+Age standardisation (arculatic matching of the age distribution of two groups):
+
+- Possible direct comparison of measures in 2 or more groups (age-specific measures are better comparable)
+- Calculation of a weighted average per group as a simple method of avoiding distortions by confounding (if age is associated with both exposure and outcome)
+- Standard can be decisive for conclusion: must be explained
+
+## Example: Age standardisation
+<br>
+<div style="display: flex; justify-content: center; align-items: center;">
+<figure>
+<!-- <figcaption style="font-size: 24px; font-weight: 800;">B</figcaption> -->
+<img src="images/table_adjust_01.jpg" alt="Description of image" width="700" height="400">
+</figure>
+</div>
+
+## {background-color="#B56576"}
+
+<div style="position: absolute; bottom: 200px;">
+
+<h2>
+<p>Measures of Effect</p>
+</h2>
+
+<small> Find sth cool to include here
+</small> 
+</div>
+
+## [Group Comparisons]{style="color: #90515f;"}
+
+<br>
+
+<p style="font-size: 30px; text-align: center;">Previous measurements do not make any statements about</p>
+
+<br>
+
+			
+<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap:150px;">
+
+<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1;"></i>
+
+<h3  style="color: #B56576;">The disease risk of a</h3>
+<h3  style="color: #B56576;">particular group or</h3>
+
+</div>
+
+	
+<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1"> &nbsp;&nbsp;</i><i class="fa-solid fa-people-group" style="color: #B56576"></i>
+
+<h3 style="color: #B56576;">The risk of disease in </h3>
+<h3 style="color: #B56576;">relation to another group</h3>
+
+</div>
+
+
+</div>
+
+<br>
+
+<p class="fragment" style="font-size: 30px;">To achieve this, we need:</p>
+
+<div class="grid-container" style="grid-template-columns: 1fr 1fr 1fr">
+<div class="grid-item">
+<div>
+<p class="fragment">Measures of association or effect measures for comparing groups</p>
+</div>
+</div>
+
+<div class="grid-item">
+<div>
+<p class="fragment">Statistical measures due to the uncertainty in point estimates</p>
+<ul style="font-size: 20px;" class="fragment">
+<li>p-value</li>
+<li>Confidence interval</li>
+</ul>
+</div>
+</div>
+<div class="grid-item">
+<!--	<i class="fa-solid fa-people-group" style="color: #B56576"></i> -->	
+<div>
+<p class="fragment">Causality criteria (see above)</p>
+</div>
+</div>
+</div>
+
+##
+
+<br>
+
+<p style="font-weight: 100; text-align: center; font-size: 30px; font-family: Helvetica, Courier, monospace;">
+Most epidemiological studies one aims to compare the occurrence of the a health outcome between two group: </p>
+
+<br>
+
+<div class="grid-container class= fragment"  style="grid-template-columns: 1fr 1fr">
+<div class="grid-item">
+<i class="fa-solid fa-people-group" style="color: #B56576"></i>
+<div>
+<h3 style="color: #90515f; font-size: 35px;">Exposed</h3>
+</div>
+</div>
+	
+<div class="grid-item">
+<i class="fa-solid fa-people-group" ></i>
+<div>
+<h3 style="color: #90515f; font-size: 35px;">Unexposed</h3>
+</div>
+</div>
+</div>
+
+<br>
+
+<p class= "fragment" style="font-weight: 100; text-align: center; font-size: 30px; font-family: Helvetica, Courier, monospace;">The outcome is measured to determine the risk (eg. cumulative incidence) or incidence rate.</p>
+
+<br>
+
+<div class="grid-container class= fragment"  style="grid-template-columns: 1fr 1fr">
+<div>
+<h3 style="color: #B56576">Absolute differences</h3>
+
+</div>
+
+<div>
+<h3 style="color: #B56576">Relative differences </h3>
+</div>
+</div>  
+<!--absolute and relative measures are essential for understanding health outcomes and the effects of exposures. Each measure has distinct characteristics that influence how data is interpreted.-->
+
+## Absolute differences in measures
+
+<p style="text-align: center;">Describes the difference between the probability that an event/outcome (e.g. an ADR/disease) occurs or not:
+
+Definition: Absolute measures express the actual difference in risk or incidence between two groups, typically an exposed group and an unexposed group. Common examples include risk difference and attributable risk.
+
+</p>
+
+<br>
+
+<ul style="font-size: 30px;">
+<li class="fragment">Prevalence difference (PD)</li>
+<li class="fragment">Risk difference (RD): Indicates the absolute difference between two risks
+$$RD= \text{Risk}_{\text{Exposed}} - \text{Risk}_{\text{Unexposed}}$$
+<p style="font-size: 20px; text-align: center;">No Unit</p>
+</li>
+<li class="fragment" >Incidence rate difference (IRD)
+$$IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}$$
+<p style="font-size: 20px; text-align: center;">Unit: per person-years (such as incidence rate)</p>
+</li>
+
+</ul>
+
+## Characteristics AD:
+Provides a straightforward interpretation of the actual impact of an exposure.
+Useful for public health decision-making as it indicates the actual number of cases that can be attributed to a risk factor.
+
+
+## Relative  Measures
+
+Definition: Relative measures express the ratio of risks between two groups, such as relative risk (RR) or odds ratios (OR). They indicate how many times more (or less) likely an event is to occur in one group compared to another.
+
+Characteristics:
+Summarizes information into a single value, making it easier to communicate findings.
+Can obscure the actual risk when absolute risks are low, leading to potential overestimation of treatment effects or risks associated with exposures.
+
+## Pros and cons
+
+Pros and Cons
+Pros of Absolute Measures
+ -  Clarity: Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.
+ -  Relevance: More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.
+ -  Public Health Impact: Helps in assessing the burden of disease and planning interventions by showing how many cases could potentially be prevented.
+
+Cons of Absolute Measures
+ - Limited Context: May not provide a complete picture if used alone, as they do not account for the relative context of risks across populations.
+ - Variability: The interpretation can vary significantly based on population characteristics, which may lead to different conclusions in subgroup analyses.
+
+Pros of Relative Measures
+ - Comparative Insight: Facilitates comparisons across different studies and populations by standardizing risk assessments.
+ - Highlighting Associations: Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.
+
+Cons of Relative Measures
+ - Potential Misleading Nature: Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.
+ - Overemphasis on Ratios: May lead to neglecting important absolute differences that could inform better health decisions.
+
+Conclusion
+In epidemiology, both absolute and relative measures play crucial roles in understanding health outcomes. While absolute measures provide clarity on actual risks and their public health implications, relative measures offer valuable insights into comparative risks. The choice between these measures should depend on the context of the study and the information needs of stakeholders involved in health decision-making.
+
+ref: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3432634/
+https://academic.oup.com/ndt/article/32/suppl_2/ii13/3056571?login=false
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802340/
+
+
+
+
