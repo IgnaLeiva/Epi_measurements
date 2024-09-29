@@ -725,7 +725,7 @@ $$IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}$$
 
 ## Characteristics AD:
 Provides a straightforward interpretation of the actual impact of an exposure.
-Useful for public health decision-making as it indicates the actual number of cases that can be attributed to a risk factor.
+Useful for public health decision-making as it indicates the actual number of cases that can be attributed to a risk factor. ffff
 
 
 ## Relative  Measures
