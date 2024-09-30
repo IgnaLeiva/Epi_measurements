@@ -19,7 +19,9 @@ format:
 
 <small>Ignacio Leiva-Escobar, MSc Epi / Health Data Science</small>
 
-
+<div style="position: absolute; right: 0px;">
+<img src="QR.png" alt="Description of image" width="80" height="80">
+</div>
 ## [Lecture Content]{style="text-align: center;"}
 
 <br><br>
