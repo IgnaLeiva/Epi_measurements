@@ -14,6 +14,11 @@
   box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
+.left-border {
+  border-left: 10px solid #B56576;  /* Adds a 10px colored border on the left */
+  height: 100vh;                   /* Full viewport height */
+  padding-left: 20px;              /* Adds some padding to push content inside */
+}
 
 .container {
   display: flex;
@@ -251,6 +256,8 @@
 .background-fm {
   background: #16bffd; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #16bffd, #cb3066); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #16bffd, #cb3066); /* W
+  background: linear-gradient(to right, #16bffd, #cb3066); /* 
 }
+
+
 
