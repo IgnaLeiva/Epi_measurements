@@ -10,6 +10,7 @@ format:
 
 ## {}
 <!--this link to font awesome -->
+<!--for making a QR: https://qr.io/dashboard/-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!--height: 1920/1080, width: 1050/700-->
 ![](images/logo.png){.absolute top="0" width="250" height="250"}  
@@ -326,8 +327,9 @@ Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">sy
 <h3 style="font-size: 35px; font-weight: 900; color: #6D597A;">Prevalence is calculated as:</h3>
 
 <!--\begin{aligned} P= \frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}\end{aligned} -->
-
-$$\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}$$
+<div style="font-size: 50px; font-weight: 100; margin-top: 10px; border-radius: 20px;">
+$$P=\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}$$
+</div>
 
 </div>			
 </div>
@@ -400,7 +402,7 @@ Did you suffer from back pain last year?
 ## [Incidence cont.]{style="color: white"} 
 
 <div class="grid-container2">
-<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <div class="grid-item">
 <!--	<h2>Cumulative Incidence</h2>-->
 <h2 style="font-size: 35px; color: #ffff; font-weight: 800">Cumulative Incidence</h2>
@@ -609,7 +611,7 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 <br>
 
 			
-<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap:150px;">
+<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 150px;">
 
 <div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1;"></i>
@@ -669,6 +671,7 @@ Most epidemiological studies one aims to compare the occurrence of the a health 
 <br>
 
 <div class="grid-container class= fragment"  style="grid-template-columns: 1fr 1fr">
+
 <div class="grid-item">
 <i class="fa-solid fa-people-group" style="color: #B56576"></i>
 <div>
@@ -702,28 +705,90 @@ Most epidemiological studies one aims to compare the occurrence of the a health 
 </div>  
 <!--absolute and relative measures are essential for understanding health outcomes and the effects of exposures. Each measure has distinct characteristics that influence how data is interpreted.-->
 
-## Absolute differences in measures
+## 
+<!--[Absolute differences in measures]{style="color: #90515f;"}-->
 
-<p style="text-align: center;">Describes the difference between the probability that an event/outcome (e.g. an ADR/disease) occurs or not:
+<div class="grid-container  class= fragment"  style="grid-template-columns: 1fr 1fr; gap: 100px;">
 
-Definition: Absolute measures express the actual difference in risk or incidence between two groups, typically an exposed group and an unexposed group. Common examples include risk difference and attributable risk.
-
-</p>
+<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div>
+<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
+<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #FFFFFF; font-size: 20px;">Absolute measures describe the actual difference in the probability or incidence of an event or outcome (e.g., an adverse drug reaction or disease) between two groups, typically comparing an exposed group and an unexposed group.</p>
+</div>
 
 <br>
 
-<ul style="font-size: 30px;">
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:300px;">
+<ul style="font-size: 20px;">
 <li class="fragment">Prevalence difference (PD)</li>
-<li class="fragment">Risk difference (RD): Indicates the absolute difference between two risks
+<li class="fragment">Risk difference (RD) <!--Indicates the absolute difference between two risks-->
 $$RD= \text{Risk}_{\text{Exposed}} - \text{Risk}_{\text{Unexposed}}$$
-<p style="font-size: 20px; text-align: center;">No Unit</p>
+<p style="font-size: 15px; text-align: center; color: #fff">No Unit</p>
 </li>
 <li class="fragment" >Incidence rate difference (IRD)
 $$IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}$$
-<p style="font-size: 20px; text-align: center;">Unit: per person-years (such as incidence rate)</p>
+<p style="font-size: 15px; text-align: center; color: #fff">Unit: per person-years (such as incidence rate)</p>
 </li>
-
 </ul>
+</div> 
+</div>
+</div>
+
+<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div>
+<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">Relative differences</p>
+<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #FFFFFF; font-size: 20px;">Relative measures express the ratio of risks between two groups, indicating how much more (or less) likely an event is to occur in one group compared to another.</p>
+
+</div>
+
+<br>
+
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);height:300px; ">
+<ul style="font-size: 20px;">
+<li class="fragment">Prevalence ratio (PR) <!--Indicates the absolute difference between two risks-->
+$$PR= \frac{\text{P}_{\text{Exposed}}}{ \text{P}_{\text{Unexposed}}}$$
+</li>
+<li class="fragment" >Incidence rate ratio  (IRR)
+$$IRR= \frac{\text{IR}_{\text{Exposed}}}{\text{IR}_{\text{Unexposed}}}$$
+</li>
+</ul>
+</div> 
+</div>
+</div>
+
+</div>
+
+## Quiz
+<br>
+<p style="text-align: center;">Which statements apply to the following situations?</p>
+
+| Group              | Situation A   | Situation B   |
+|--------------------|---------------|---------------|
+| Risk among exposed   | 4/100,000     | 400/100,000   |
+| Risk among unexposed | 2/100,000     | 398/100,000   |
+
+<br>
+<ul style="font-size: 25px; margin-left: 130px;">
+<li>In both situatuons, the risk among the exposed group is 2-fold higher</li>
+<li>Both absolute differences differ</li>
+<li>The relative risk ratio differs for the same absolute risk difference</li>
+<li> All the above answers</li>
+</ul>
+
+## Quiz
+<br>
+<p style="text-align: center;"> Calculate the risk difference and relative risk for the fictitious incidences of CHD and bronquial carcinoma per 105 people</p>
+
+|    | Non-smoker | Smoker |
+|----|------------:|--------:|
+| **CHD** | 422 |  599 |
+| **Carcinoma** | 7 | 166|
+
+
 
 ## Characteristics AD:
 Provides a straightforward interpretation of the actual impact of an exposure.

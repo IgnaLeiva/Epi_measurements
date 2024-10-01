@@ -135,6 +135,16 @@
   gap: 100px;
   text-align: left;
 }
+
+.grid-container-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
 //*
 .grid-container2 {
   display: grid;

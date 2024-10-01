@@ -329,6 +329,7 @@
 <section id="section" class="slide level2">
 <h2></h2>
 <!--this link to font awesome -->
+<!--for making a QR: https://qr.io/dashboard/-->
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--height: 1920/1080, width: 1050/700--> <img data-src="images/logo.png" class="absolute" style="top: 0px; width: 250px; height: 250px; "></p>
 <br><br><br><br><br><br><br><br><br>
 <h3>
@@ -669,7 +670,9 @@ what proportion of the population is affected by the disease at specific time
 Prevalence is calculated as:
 </h3>
 <!--\begin{aligned} P= \frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}\end{aligned} -->
-<p><span class="math display">\[\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}\]</span></p>
+<div style="font-size: 50px; font-weight: 100; margin-top: 10px; border-radius: 20px;">
+<p><span class="math display">\[P=\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific Time}}\]</span></p>
+</div>
 </div>
 </div>
 </div>
@@ -751,7 +754,7 @@ Incidence
 <section id="incidence-cont." class="slide level2">
 <h2><span style="color: white">Incidence cont.</span></h2>
 <div class="grid-container2">
-<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <div class="grid-item">
 <!--    <h2>Cumulative Incidence</h2>-->
 <h2 style="font-size: 35px; color: #ffff; font-weight: 800">
@@ -988,7 +991,7 @@ Measures of Effect
 Previous measurements do not make any statements about
 </p>
 <p><br></p>
-<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap:150px;">
+<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 150px;">
 <div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <p><i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1;"></i></p>
 <h3 style="color: #B56576;">
@@ -1089,30 +1092,143 @@ Relative differences
 </div>
 <!--absolute and relative measures are essential for understanding health outcomes and the effects of exposures. Each measure has distinct characteristics that influence how data is interpreted.-->
 </section>
-<section id="absolute-differences-in-measures" class="slide level2">
-<h2>Absolute differences in measures</h2>
-<p style="text-align: center;">
-</p><p>Describes the difference between the probability that an event/outcome (e.g.&nbsp;an ADR/disease) occurs or not:</p>
-<p>Definition: Absolute measures express the actual difference in risk or incidence between two groups, typically an exposed group and an unexposed group. Common examples include risk difference and attributable risk.</p>
-<p></p>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<!--[Absolute differences in measures]{style="color: #90515f;"}-->
+<div class="grid-container class= fragment" style="grid-template-columns: 1fr 1fr; gap: 100px;">
+<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div>
+<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">
+Absolute differences
+</p>
+<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">
+in measures
+</p>
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #FFFFFF; font-size: 20px;">
+Absolute measures describe the actual difference in the probability or incidence of an event or outcome (e.g., an adverse drug reaction or disease) between two groups, typically comparing an exposed group and an unexposed group.
+</p>
+</div>
 <p><br></p>
-<ul style="font-size: 30px;">
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:300px;">
+<ul style="font-size: 20px;">
 <li class="fragment">
 Prevalence difference (PD)
 </li>
 <li class="fragment">
-Risk difference (RD): Indicates the absolute difference between two risks <span class="math display">\[RD= \text{Risk}_{\text{Exposed}} - \text{Risk}_{\text{Unexposed}}\]</span>
-<p style="font-size: 20px; text-align: center;">
+Risk difference (RD) <!--Indicates the absolute difference between two risks--> <span class="math display">\[RD= \text{Risk}_{\text{Exposed}} - \text{Risk}_{\text{Unexposed}}\]</span>
+<p style="font-size: 15px; text-align: center; color: #fff">
 No Unit
 </p>
 </li>
 <li class="fragment">
 Incidence rate difference (IRD) <span class="math display">\[IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}\]</span>
-<p style="font-size: 20px; text-align: center;">
+<p style="font-size: 15px; text-align: center; color: #fff">
 Unit: per person-years (such as incidence rate)
 </p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div>
+<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">
+Relative differences
+</p>
+<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">
+in measures
+</p>
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #FFFFFF; font-size: 20px;">
+Relative measures express the ratio of risks between two groups, indicating how much more (or less) likely an event is to occur in one group compared to another.
+</p>
+</div>
+<p><br></p>
+<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);height:300px; ">
+<ul style="font-size: 20px;">
+<li class="fragment">
+Prevalence ratio (PR) <!--Indicates the absolute difference between two risks--> <span class="math display">\[PR= \frac{\text{P}_{\text{Exposed}}}{ \text{P}_{\text{Unexposed}}}\]</span>
+</li>
+<li class="fragment">
+Incidence rate ratio (IRR) <span class="math display">\[IRR= \frac{\text{IR}_{\text{Exposed}}}{\text{IR}_{\text{Unexposed}}}\]</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quiz-2" class="slide level2">
+<h2>Quiz</h2>
+<br>
+<p style="text-align: center;">
+Which statements apply to the following situations?
+</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Situation A</th>
+<th>Situation B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risk among exposed</td>
+<td>4/100,000</td>
+<td>400/100,000</td>
+</tr>
+<tr class="even">
+<td>Risk among unexposed</td>
+<td>2/100,000</td>
+<td>398/100,000</td>
+</tr>
+</tbody>
+</table>
+<br>
+<ul style="font-size: 25px; margin-left: 130px;">
+<li>
+In both situatuons, the risk among the exposed group is 2-fold higher
+</li>
+<li>
+Both absolute differences differ
+</li>
+<li>
+The relative risk ratio differs for the same absolute risk difference
+</li>
+<li>
+All the above answers
+</li>
+</ul>
+</section>
+<section id="quiz-3" class="slide level2">
+<h2>Quiz</h2>
+<br>
+<p style="text-align: center;">
+Calculate the risk difference and relative risk for the fictitious incidences of CHD and bronquial carcinoma per 105 people
+</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Non-smoker</th>
+<th style="text-align: right;">Smoker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CHD</strong></td>
+<td style="text-align: right;">422</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td><strong>Carcinoma</strong></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">166</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="characteristics-ad" class="slide level2">
 <h2>Characteristics AD:</h2>
