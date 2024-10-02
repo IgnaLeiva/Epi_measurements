@@ -768,7 +768,7 @@ Measures of effect
 
 <div class="grid-container  class= fragment"  style="grid-template-columns: 1fr 1fr; gap: 100px;">
 
-<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #842A3D; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #842A3D; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;">
 <div>
 <p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
 <p style="color: #A85C6C; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
@@ -796,7 +796,7 @@ $$IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}$$
 
 <!--relative diferrence-->
 
-<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #FFFFFF; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #FFFFFF; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;">
 <div>
 <p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Relative differences</p>
 <p style="color: #A85C6C; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
@@ -857,48 +857,6 @@ Measures of effect
 Measures of effect
 </div> 
 
-## Characteristics AD:
-Provides a straightforward interpretation of the actual impact of an exposure.
-Useful for public health decision-making as it indicates the actual number of cases that can be attributed to a risk factor. ffff
-
-
-## Relative  Measures
-
-Definition: Relative measures express the ratio of risks between two groups, such as relative risk (RR) or odds ratios (OR). They indicate how many times more (or less) likely an event is to occur in one group compared to another.
-
-Characteristics:
-Summarizes information into a single value, making it easier to communicate findings.
-Can obscure the actual risk when absolute risks are low, leading to potential overestimation of treatment effects or risks associated with exposures.
-
-## Pros and cons
-
-```{r}
-
-#| echo: false
-
-library(gt)
-library(tidyverse)
-
-absolute<- data.frame(
-	measurement = c(rep("absolute",6)),
-	type = c(rep("pros",3), rep("con", 3)),
-	description = c("Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.", "More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.",
-	"Helps in assessing the burden of disease and planning interventions by showing how many cases could potentially be prevented.", "May not provide a complete picture if used alone, as they do not account for the relative context of risks across populations.", "The interpretation can vary significantly based on population characteristics, which may lead to different conclusions in subgroup analyses.", NA)
-	)
-
-relative<- data.frame(
-	measurement = c(rep("relative",4)),
-	type = c(rep("pros",2), rep("con", 2)),
-	description = c("Facilitates comparisons across different studies and populations by standardizing risk assessments.", "Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.", "Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.", "May lead to neglecting important absolute differences that could inform better health decisions.")
-	)
-
-df <- rbind(absolute, relative)
-
-df %>% group_by(measurement) %>% gt()
-
-```
-
-
 ##
 
 <div class="grid-container" style="grid-template-columns: 1fr 1fr 1fr; gap: 0px;">
@@ -908,23 +866,25 @@ top: 50px; left: -10px;">
 <p style="font-weight: 900;">Pros</p>
 </div>-->
 <div>
-<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 50px; width:50px;">
+<div style="border-radius: 12px 0px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; border: 1px solid #B56576; height: 50px; width:50px;">
 </div>
 
-<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 280px; width:50px;">
-<p style="font-weight: 900; margin: 0; transform: rotate(-90deg);transform-origin: left top; justify-content: center;">Pros</p>
+<div style="border-radius: 0px 0px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; border: 1px solid #B56576; height: 280px; width:50px; display: flex; justify-content: center; align-items: center;">
+
+<p style="font-size: 25px;font-weight: 800; transform: rotate(-90deg); text-align: left;">Pros</p>
+
 </div>
 
-<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 280px; width:50px;">
+<div style="border-radius: 0px 0px 0px 12px; font-size: 25px; color: #fff;background-color: #B56576; border: 1px solid #B56576; height: 276px; width:50px; display: flex; justify-content: center; align-items: center;">
+<p style="font-size: 25px;font-weight: 800; transform: rotate(-90deg); text-align: left;">Cons</p>
+
 </div>
-
-
 </div>
 
 
 <!-- Absolute-->
 <div>
-<div style="border-radius: 12px 12px 0px 0px;
+<div style="border-radius: 0px 0px 0px 0px;
 								font-size: 25px;
 								font-weight: 800;
 								color:#fff;
@@ -933,7 +893,8 @@ top: 50px; left: -10px;">
 								text-align: center;
 								justify-content: center;
 								height: 50px;
-								background-color: #B56576;">
+								background-color: #B56576;
+								border: 1px solid #B56576;">
 <p style="font-weight: 900;">Absolute</p>
 </div>
 <div style="border-radius: 0px 0px 0px 0px;
@@ -953,14 +914,14 @@ top: 50px; left: -10px;">
 </ul>
 </div>
 
-<div style="border-radius: 0px 0px 12px 12px;
+<div style="border-radius: 0px 0px 0px 0px;
 								font-size: 25px;
 								font-weight: 100;
 								text-align: left;
 								height:280px;
 								width: 500px;
 								color:#545050;
-								background-color: #EFC1C9;">
+								background-color: #F6E2E5;">
 <!-- Cons absolute -->	
 <!--<p style="margin-top: 0; padding: 10px; font-weight: 400;">Cons</p>-->
 <ul style="font-size: 20px; padding: 10px;">
@@ -973,7 +934,7 @@ top: 50px; left: -10px;">
 <!-- Relative-->
 
 <div>
-<div style="border-radius: 12px 12px 0px 0px;
+<div style="border-radius: 0px 12px 0px 0px;
 								font-size: 25px;
 								font-weight: 800;
 								color:#fff;
@@ -982,35 +943,34 @@ top: 50px; left: -10px;">
 								text-align: center;
 								justify-content: center;
 								height: 50px;
-								background-color: #B56576;">
+								background-color: #B56576;
+								border: 1px solid #B56576;">
 <p style="font-weight: 900;">Relative</p>
 </div>
-<div style="border-radius: 0px 0px 12px 12px;
+<div style="border-radius: 0px 0px 0px 0px;
 								font-size: 25px;
 								font-weight: 100;
 								text-align: left;
-								height:300px;
+								height:280px;
 								width: 500px;
 								color:#545050;
 								background-color: #EDD7DB;">
 <!-- Pros relative -->								
-<p style="margin-top: 0; padding: 10px; font-weight: 400; text-align: center;">Pros</p>
 <ul style="font-size: 20px; padding: 10px;">
 <li>Facilitates comparisons across different studies and populations by standardizing risk assessments.</li>
 <li>Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.</li>
 </ul>
 </div>
 
-<div style="border-radius: 0px 0px 12px 12px;
+<div style="border-radius: 0px 0px 12px 0px;
 								font-size: 25px;
 								font-weight: 100;
 								text-align: left;
-								height:300px;
+								height:280px;
 								width: 500px;
 								color:#545050;
-								background-color: #EDD7DB;">
+								background-color: #F6E2E5;">
 <!-- Cons relative -->	
-<p style="margin-top: 0; padding: 10px; font-weight: 400;">Cons</p>
 <ul style="font-size: 20px; padding: 10px;">
 <li>Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.</li>
 <li>May lead to neglecting important absolute differences that could inform better health decisions.</li>
@@ -1022,36 +982,45 @@ top: 50px; left: -10px;">
 
 
 
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
 
-
-
-##
-
-
-Pros of Absolute Measures
- -  Clarity: Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.
- -  Relevance: More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.
- -  Public Health Impact: Helps in assessing the burden of disease and planning interventions by showing how many cases could potentially be prevented.
-
-Cons of Absolute Measures
- - Limited Context: May not provide a complete picture if used alone, as they do not account for the relative context of risks across populations.
- - Variability: The interpretation can vary significantly based on population characteristics, which may lead to different conclusions in subgroup analyses.
-
-Pros of Relative Measures
- - Comparative Insight: Facilitates comparisons across different studies and populations by standardizing risk assessments.
- - Highlighting Associations: Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.
-
-Cons of Relative Measures
- - Potential Misleading Nature: Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.
- - Overemphasis on Ratios: May lead to neglecting important absolute differences that could inform better health decisions.
-
+:::{.notes}
 Conclusion
 In epidemiology, both absolute and relative measures play crucial roles in understanding health outcomes. While absolute measures provide clarity on actual risks and their public health implications, relative measures offer valuable insights into comparative risks. The choice between these measures should depend on the context of the study and the information needs of stakeholders involved in health decision-making.
 
 ref: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3432634/
 https://academic.oup.com/ndt/article/32/suppl_2/ii13/3056571?login=false
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802340/
+:::
 
 
+## {background="#F1EFEF"}
+
+<div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+
+<div style="border-radius: 6px 6px 6px 6px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:600px;
+								width: 500px;
+								color:#545050;
+								background-color: #ffff;">
+
+<p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
+</div>
+
+<div style="border-radius: 6px 6px 6px 6px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:600px;
+								width: 500px;
+								color:#545050;
+								background-color: #ffff;">
 
 
+</div>
+</div>
