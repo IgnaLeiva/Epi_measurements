@@ -98,7 +98,7 @@ format:
 								color: #fff;
 								font-size: 23px;
 								font-weight: 800;">
-<p>Effect &nbsp;measurement</p>
+<p>Measures of effect</p>
 </div>
 				
 <div class="info-box" style="
@@ -124,7 +124,7 @@ format:
 								color: #fff;
 								font-size: 23px;
 								font-weight: 800;">
-<p>Measures Effectiveness</p>
+<p>Measures of effectiveness</p>
 </div>
 				
 <div class="info-box" style="
@@ -425,9 +425,17 @@ Measures of frequency
 - Downsides of prevalence: mixes up information on (1) Frequency of new events and (2) disease duration
 - Does not capture dynamic populations (cure, death, migration...)
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
+
 ## [Incidence]{style="color: white"} 
 
 <h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh;color: #6D597A">Incidence</h1>
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## [Incidence cont.]{style="color: white"} 
 
@@ -482,30 +490,36 @@ IR = \frac{\text{Number of New Cases}}{\text{Total Person-Time at Risk}}
 </div>
 </div>
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
+
+
 
 ## [Incidence cont. example]{style="color: white"} 
 
 <div class="grid-container2">
-<div style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+
+<div style="background: #fff; border: 1px solid #fff; padding: 20px; border-radius: 20px; text-align: center;">
 <div class="grid-item">
 <!--	<h2>Cumulative Incidence</h2>-->
-<h2 style="font-size: 35px; color: #ffff; font-weight: 800">Cumulative Incidence</h2>
+<h2 style="font-size: 35px; color: #6D597A; font-weight: 800">Cumulative Incidence</h2>
  
-<p style="color: #fff;">Five-year cumulative incidence of recurrent colorectal cancer 21%. 21 out of every 100 developed a recurrence within five years</p>
+<p style="color: #6D597A;">Five-year cumulative incidence of recurrent colorectal cancer 21%. 21 out of every 100 developed a recurrence within five years</p>
 
 </div>
 </div>
 
 
-<div class="fragment" style="background: #6D597A; color: #FFFFFF; border: 1px solid #6D597A; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="fragment" style="background: #FFFFFF; border: 1px solid #FFFFFF; padding: 20px;text-align: center;">
 <div class="grid-item">
-<h2 style="font-size: 35px; color: #ffff; font-weight: 800">
+<h2 style="font-size: 35px; color: #6D597A; font-weight: 800">
 Incidence Rate</h2>
 
 
 <div>
-<p style="color: #fff;">The value of the IR depends on the time unit being used </p> <!-- and this is why the numeric value should not be interpreted in isolation without knowing the time scale -->
-<p style="color: #fff;">e.g. 100 events per 1 person year</p> 
+<p style="color: #6D597A;">The value of the IR depends on the time unit being used </p> <!-- and this is why the numeric value should not be interpreted in isolation without knowing the time scale -->
+<p style="color: #6D597A;">e.g. 100 events per 1 person year</p> 
 <!--	<p>Women on postmenopausal hormones had an incidence rate of 30 events during 54,308.7 person years of follow-up</p> -->
 <ul style="font-size: 20px;">
 <li>IR = 100 / Personen-Jahr</li>
@@ -517,30 +531,12 @@ Incidence Rate</h2>
 </div>
 </div>
 
-
-<!--Example
-<br>
-
-<div class="grid-container2 fragment">
-<div class="grid-item">
-Example: 
-<p>Five-year cumulative incidence of recurrent colorectal cancer 21%. 21 out of every 100 developed a recurrence within five years</p>
-</div>
-<div class="grid-item">
-Example: 
-<p>The value of the IR depends on the time unit being used </p> <!-- and this is why the numeric value should not be interpreted in isolation without knowing the time scale 
-<p>e.g. 100 events per 1 person year</p> 
-<!--	<p>Women on postmenopausal hormones had an incidence rate of 30 events during 54,308.7 person years of follow-up</p> -
-<ul style="font-size: 20px;">
-<li>IR = 100 / Personen-Jahr</li>
-<li> IR = 10 000 / 100 Personen-Jahre</li>
-<li>IR = 8,33 / Personen-Monat</li>
-</ul>
-</div>
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
 </div> 
--->
 
-## Quiz ^[Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019.]
+
+## [Quiz]{style="color: #6D597A;"}^[Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019.]
 
 
 <div class="grid-container2">
@@ -568,6 +564,10 @@ Example:
 </ul>
 </div>
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
+
 <!--
 <aside class="footnotes; fragment" style="font-size: 15px; text-align: right; color: #999; position: relative; bottom: 0px;">
 Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019.
@@ -584,11 +584,19 @@ Incidence in dependence on the population:
 </ul>
 <p>Steady-state: the number of people entering and exiting the population is balanced (also with regard to age, gender and other risk factors</p>
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div>  
+
 ## {}
 
 Another measure that is very similar to the incidence rate and that is specifically used in survival analysis is the hazard rate.
 For all practical purposes, hazards can be thought of as incidence rates and thus the HR can be roughly interpreted as the incidence rate ratio (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3653612/).
 This means that the hazard rate can be thought of as the incidence rate of death or this other event (doi: 10.1093/ndt/gfw465)
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## Relationship between incidence and prevalence
 
@@ -603,6 +611,10 @@ This means that the hazard rate can be thought of as the incidence rate of death
 $$Prevalence = \text{Incidence}\times\text{Duration of Disease}$$
 </div>
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
+
 ## Age standardisation
 
 Age standardisation (arculatic matching of the age distribution of two groups):
@@ -610,6 +622,10 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 - Possible direct comparison of measures in 2 or more groups (age-specific measures are better comparable)
 - Calculation of a weighted average per group as a simple method of avoiding distortions by confounding (if age is associated with both exposure and outcome)
 - Standard can be decisive for conclusion: must be explained
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## Example: Age standardisation
 <br>
@@ -619,6 +635,10 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 <img src="images/table_adjust_01.jpg" alt="Description of image" width="700" height="400">
 </figure>
 </div>
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div>  
 
 ## {background-color="#B56576"}
 
@@ -643,7 +663,7 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 			
 <div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 150px;">
 
-<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;">
 <i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1;"></i>
 
 <h3  style="color: #B56576;">The disease risk of a</h3>
@@ -652,7 +672,7 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 </div>
 
 	
-<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item" style="background: #FFFFFF; color: #FFFFFF; border: 1.5px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;">
 <i class="fa-solid fa-people-group" style="color: #B56576; opacity: 1"> &nbsp;&nbsp;</i><i class="fa-solid fa-people-group" style="color: #B56576"></i>
 
 <h3 style="color: #B56576;">The risk of disease in </h3>
@@ -690,6 +710,10 @@ Age standardisation (arculatic matching of the age distribution of two groups):
 </div>
 </div>
 </div>
+
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
 
 ##
 
@@ -735,22 +759,26 @@ Most epidemiological studies one aims to compare the occurrence of the a health 
 </div>  
 <!--absolute and relative measures are essential for understanding health outcomes and the effects of exposures. Each measure has distinct characteristics that influence how data is interpreted.-->
 
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
+
 ## 
 <!--[Absolute differences in measures]{style="color: #90515f;"}-->
 
 <div class="grid-container  class= fragment"  style="grid-template-columns: 1fr 1fr; gap: 100px;">
 
-<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #842A3D; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <div>
-<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
-<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
-<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
+<p style="color: #A85C6C; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
+<div class="grid-item grid-item-RA" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; height:160px;">
 <p style="color: #FFFFFF; font-size: 20px;">Absolute measures describe the actual difference in the probability or incidence of an event or outcome (e.g., an adverse drug reaction or disease) between two groups, typically comparing an exposed group and an unexposed group.</p>
 </div>
 
 <br>
 
-<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:300px;">
+<div class="grid-item grid-item-RA" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; height:300px;">
 <ul style="font-size: 20px;">
 <li class="fragment">Prevalence difference (PD)</li>
 <li class="fragment">Risk difference (RD) <!--Indicates the absolute difference between two risks-->
@@ -766,18 +794,20 @@ $$IRD= \text{IR}_{\text{Exposed}} - \text{IR}_{\text{Unexposed}}$$
 </div>
 </div>
 
-<div class="grid-item" style="background: #CF95A1; color: #FFFFFF; border: 1px solid #CF95A1; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
+<!--relative diferrence-->
+
+<div class="grid-item grid-item-RA" style="background: #EDD7DB; color: #FFFFFF; border: 1px solid #EDD7DB; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);">
 <div>
-<p style="color: #FFFFFF; font-size: 30px; font-weight:900;margin-bottom: 0;">Relative differences</p>
-<p style="color: #FFFFFF; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
-<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1); height:160px;">
+<p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Relative differences</p>
+<p style="color: #A85C6C; font-size: 25px; font-weight:100;margin-top: 0;">in measures</p>
+<div class="grid-item grid-item-RA" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; height:160px;">
 <p style="color: #FFFFFF; font-size: 20px;">Relative measures express the ratio of risks between two groups, indicating how much more (or less) likely an event is to occur in one group compared to another.</p>
 
 </div>
 
 <br>
 
-<div class="grid-item" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);height:300px; ">
+<div class="grid-item grid-item-RA" style="background: #B56576; color: #FFFFFF; border: 1px solid #B56576; padding: 20px; border-radius: 20px; height:300px; ">
 <ul style="font-size: 20px;">
 <li class="fragment">Prevalence ratio (PR) <!--Indicates the absolute difference between two risks-->
 $$PR= \frac{\text{P}_{\text{Exposed}}}{ \text{P}_{\text{Unexposed}}}$$
@@ -791,6 +821,7 @@ $$IRR= \frac{\text{IR}_{\text{Exposed}}}{\text{IR}_{\text{Unexposed}}}$$
 </div>
 
 </div>
+
 
 ## Quiz
 <br>
@@ -809,6 +840,10 @@ $$IRR= \frac{\text{IR}_{\text{Exposed}}}{\text{IR}_{\text{Unexposed}}}$$
 <li> All the above answers</li>
 </ul>
 
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
+
 ## Quiz
 <br>
 <p style="text-align: center;"> Calculate the risk difference and relative risk for the fictitious incidences of CHD and bronquial carcinoma per 105 people</p>
@@ -818,7 +853,9 @@ $$IRR= \frac{\text{IR}_{\text{Exposed}}}{\text{IR}_{\text{Unexposed}}}$$
 | **CHD** | 422 |  599 |
 | **Carcinoma** | 7 | 166|
 
-
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
 
 ## Characteristics AD:
 Provides a straightforward interpretation of the actual impact of an exposure.
@@ -835,7 +872,162 @@ Can obscure the actual risk when absolute risks are low, leading to potential ov
 
 ## Pros and cons
 
-Pros and Cons
+```{r}
+
+#| echo: false
+
+library(gt)
+library(tidyverse)
+
+absolute<- data.frame(
+	measurement = c(rep("absolute",6)),
+	type = c(rep("pros",3), rep("con", 3)),
+	description = c("Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.", "More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.",
+	"Helps in assessing the burden of disease and planning interventions by showing how many cases could potentially be prevented.", "May not provide a complete picture if used alone, as they do not account for the relative context of risks across populations.", "The interpretation can vary significantly based on population characteristics, which may lead to different conclusions in subgroup analyses.", NA)
+	)
+
+relative<- data.frame(
+	measurement = c(rep("relative",4)),
+	type = c(rep("pros",2), rep("con", 2)),
+	description = c("Facilitates comparisons across different studies and populations by standardizing risk assessments.", "Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.", "Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.", "May lead to neglecting important absolute differences that could inform better health decisions.")
+	)
+
+df <- rbind(absolute, relative)
+
+df %>% group_by(measurement) %>% gt()
+
+```
+
+
+##
+
+<div class="grid-container" style="grid-template-columns: 1fr 1fr 1fr; gap: 0px;">
+
+<!--<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff; position: absolute; background-color: #B56576; height: 50px; width:280px; transform: rotate(-90deg); transform-origin: left top; 	display: flex; align-items: center;text-align: center; justify-content: center; 
+top: 50px; left: -10px;">
+<p style="font-weight: 900;">Pros</p>
+</div>-->
+<div>
+<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 50px; width:50px;">
+</div>
+
+<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 280px; width:50px;">
+<p style="font-weight: 900; margin: 0; transform: rotate(-90deg);transform-origin: left top; justify-content: center;">Pros</p>
+</div>
+
+<div style="border-radius: 12px 12px 0px 0px; font-size: 25px; color: #fff;background-color: #B56576; height: 280px; width:50px;">
+</div>
+
+
+</div>
+
+
+<!-- Absolute-->
+<div>
+<div style="border-radius: 12px 12px 0px 0px;
+								font-size: 25px;
+								font-weight: 800;
+								color:#fff;
+								display: flex;
+                                align-items: center;
+								text-align: center;
+								justify-content: center;
+								height: 50px;
+								background-color: #B56576;">
+<p style="font-weight: 900;">Absolute</p>
+</div>
+<div style="border-radius: 0px 0px 0px 0px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:280px;
+								width: 500px;
+								color:#545050;
+								background-color: #EDD7DB;">
+<!-- Pros absolute -->								
+<!--<p style="margin-top: 0; padding: 10px; font-weight: 400;">Pros</p>-->
+<ul style="font-size: 20px; padding: 10px;">
+<li>Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.</li>
+<li>More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.</li>
+<li>Helps in assessing the burden of disease and planning interventions by showing how many cases could potentially be prevented.</li>
+</ul>
+</div>
+
+<div style="border-radius: 0px 0px 12px 12px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:280px;
+								width: 500px;
+								color:#545050;
+								background-color: #EFC1C9;">
+<!-- Cons absolute -->	
+<!--<p style="margin-top: 0; padding: 10px; font-weight: 400;">Cons</p>-->
+<ul style="font-size: 20px; padding: 10px;">
+<li>May not provide a complete picture if used alone, as they do not account for the relative context of risks across populations.</li>
+<li>The interpretation can vary significantly based on population characteristics, which may lead to different conclusions in subgroup analyses.</li>
+</ul>
+</div>
+</div>
+
+<!-- Relative-->
+
+<div>
+<div style="border-radius: 12px 12px 0px 0px;
+								font-size: 25px;
+								font-weight: 800;
+								color:#fff;
+								display: flex;
+                                align-items: center;
+								text-align: center;
+								justify-content: center;
+								height: 50px;
+								background-color: #B56576;">
+<p style="font-weight: 900;">Relative</p>
+</div>
+<div style="border-radius: 0px 0px 12px 12px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:300px;
+								width: 500px;
+								color:#545050;
+								background-color: #EDD7DB;">
+<!-- Pros relative -->								
+<p style="margin-top: 0; padding: 10px; font-weight: 400; text-align: center;">Pros</p>
+<ul style="font-size: 20px; padding: 10px;">
+<li>Facilitates comparisons across different studies and populations by standardizing risk assessments.</li>
+<li>Effective in demonstrating the strength of associations between exposures and outcomes, particularly in clinical trials.</li>
+</ul>
+</div>
+
+<div style="border-radius: 0px 0px 12px 12px;
+								font-size: 25px;
+								font-weight: 100;
+								text-align: left;
+								height:300px;
+								width: 500px;
+								color:#545050;
+								background-color: #EDD7DB;">
+<!-- Cons relative -->	
+<p style="margin-top: 0; padding: 10px; font-weight: 400;">Cons</p>
+<ul style="font-size: 20px; padding: 10px;">
+<li>Can exaggerate perceived benefits or risks, especially when absolute risks are low; for instance, a treatment might reduce mortality by 50%, but if the baseline risk is very low, the actual benefit may be minimal.</li>
+<li>May lead to neglecting important absolute differences that could inform better health decisions.</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+##
+
+
 Pros of Absolute Measures
  -  Clarity: Offers clear information about the actual risk difference, which is often more relevant for patients and policymakers.
  -  Relevance: More directly applicable to individual decision-making, as they reflect real-world implications of health interventions.
