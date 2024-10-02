@@ -5,14 +5,15 @@ format:
       css: [assets/costum.css]
       slide-number: c/t
       show-slide-number: all
-      preview-links: true
+      preview-links: true  
 ---
 
 ## {}
 <!--this link to font awesome -->
 <!--for making a QR: https://qr.io/dashboard/-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!--height: 1920/1080, width: 1050/700-->
+<!--width: 1920/1080, height: 1050/700-->
+
 ![](images/logo.png){.absolute top="0" width="250" height="250"}  
 
 <br><br><br><br><br><br><br><br><br>
@@ -209,6 +210,10 @@ The modification (reduction) of the incidence rate of a disease through an inter
 </div>
 </div>
 
+<div class="secction-menu" style="background-color:#355070;">
+Introduction
+</div>
+
 ## Basis of empirical studies
 
 <br><br><br>
@@ -233,6 +238,11 @@ Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">sy
 Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">systemic bias</span>  in the planning and conduct of a epidemiological studies
 </div>
 
+</div>
+
+
+<div class="secction-menu" style="background-color:#355070;">
+Introduction
 </div>
 
 ## Principle of data analyses
@@ -289,6 +299,9 @@ Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">sy
 </div>
 </div>
 
+<div class="secction-menu" style="background-color:#355070;">
+Introduction
+</div> 
 
 ## {background-color="#6D597A"}
 
@@ -307,6 +320,11 @@ Avoid any <span style="font-weight: bold; color: #14355d;font-style: italic;">sy
 ## [Prevalence]{style="color: white"} 
 
 <h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh; color: #6D597A">Prevalence</h1>
+
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## [Prevalence cont.]{style="color: white"} 
 
@@ -335,6 +353,10 @@ $$P=\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific T
 </div>
 </div>
 
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
+
 ## [Prevalence type]{style="color: #6D597A;font-weight: 900;"}
 
 <div style="position: absolute; top: 200px;">
@@ -356,6 +378,10 @@ $$P=\frac{\text{Number of Current Cases}}{\text{Total Population at a Specific T
 		- Persons get sick during the period of ob.
 		- Persons were already ill before (die in the period)
 :::
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## [Quiz]{style="color: #6D597A; font-weight: 900;"} 
 
@@ -382,6 +408,10 @@ Did you suffer from back pain last year?
 </div>
 </div>
 </div>
+
+<div class="secction-menu" style="background-color:#6D597A;">
+Measures of frequency
+</div> 
 
 ## Properties and limitations
 
