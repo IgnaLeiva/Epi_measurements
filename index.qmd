@@ -652,6 +652,14 @@ Measures of frequency
 </small> 
 </div>
 
+## [Simple measures]{style="color: white"} 
+
+<h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh;color: #90515f">Simple measures</h1>
+
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
+
 ## [Group Comparisons]{style="color: #90515f;"}
 
 <br>
@@ -995,6 +1003,13 @@ https://academic.oup.com/ndt/article/32/suppl_2/ii13/3056571?login=false
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802340/
 :::
 
+## [Measures of association]{style="color: white"} 
+
+<h1 style="display: flex; justify-content: center; align-items: center;  height: 60vh;color: #90515f">Measures of association</h1>
+
+<div class="secction-menu" style="background-color:#B56576;">
+Measures of effect
+</div> 
 
 ## {background="#F1EFEF"}
 
@@ -1012,6 +1027,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802340/
 <p style="color: #842A3D; font-size: 30px; font-weight:900;margin-bottom: 0;">Absolute differences</p>
 </div>
 
+
 <div style="border-radius: 6px 6px 6px 6px;
 								font-size: 25px;
 								font-weight: 100;
@@ -1024,3 +1040,4 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7802340/
 
 </div>
 </div>
+
